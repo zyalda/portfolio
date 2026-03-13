@@ -1,0 +1,114 @@
+@media screen and (max-width: 10240px){
+  @import url("commonCss.css");   
+  /* CSS Document */
+/* *, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+   margin: 0px;
+   padding: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   margin: 0px;
+   padding: 0px;
+   width: 100%;
+   min-height: 100vh;
+} */
+/* .container{
+} */
+/* img {
+  display: block;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding:0;
+} */
+*
+{
+  background-color: #eee4d9;
+}
+}
+@media screen and (max-width: 800px){
+
+}
+@media screen and (max-width: 690px){
+
+}
+@media screen and (max-width: 600px) {
+    .header{
+        display: none;
+    }
+    .header-mobil
+    {
+        display: block;        
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 430px) {
+/* CSS Document */
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+   margin: 0px;
+   padding: 0px;
+   height: 100%;
+   width: 98%;
+}
+
+body {
+   margin: 0px;
+   padding: 0;
+   min-height: 100vh;
+   width: 98%;
+   /* display: flex;
+  flex-direction: column; */
+}
+.container {
+  background-color: #eee4d9;
+}
+img {
+  display: block;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding:0;
+}
+/* *
+{
+  background-color: #eee4d9;
+} */
+    .header-mobil
+    {
+        display: block;
+        text-align: center;
+    }
+    .menu li a {
+    font-size: 1.1em;
+    }  
+}
+@media screen and (max-width: 414px) {
+    *, *:before, *:after
+    {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0px;
+    }
+    .header-mobil
+    {
+        display: block;
+        text-align: center;
+    }
+    .menu li a {
+    font-size: 1.1em;
+    }  
+}
