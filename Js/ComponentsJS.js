@@ -1,13 +1,3 @@
-
-// class AddArticleComponent extends HTMLElement {
-//     connectedCallback() {
-//         this.innerHTML = 'Jag är en person med genuint intresse för och kunskap om utveckling och problemlösning och finner det mycket spännande.'+
-//         'Aktiv och gillar att röra på mig och träna. Bra på färg och former där skapa hjälper mig med CSS och att skpa mina smycken och väskor jag desinar och utför.'+
-//         'En familj människa som älskar barn, men gillar utmaningar genom teknik och tittar på som är nytt i branchen.';
-//     }
-// }
-// customElements.define('my-article', AddArticleComponent);
-
 // class AddknowledgeComponent extends HTMLElement {
 //     connectedCallback() {
 //         this.innerHTML ='<p>Tekniskt kompetent inom bland annat systemutveckling (HTML5, HTML, CSS, WordPress , PHP, XML, WPF, .NET och databaser (MySQL).'+
@@ -29,6 +19,34 @@
 //      document.getElementById("title-new").style.top = 0;
 // }
 
+class AddArticleComponent extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = '<p class="title"> Hej, Jag är Zeena.</p>'+
+        '<p>En fullstack utvecklare. Utvecklar webb och mobil applikationer samt skapar hemsidor för mina produkter.'+
+        'Länk till mina github repos finns nedan.</p>'+
+         '<div class="cv"><a href="CurriculumVitae.odt" download>'+
+         '<button type="button" class="btn">Load CV</button></a></div>';
+    }
+}
+customElements.define('my-article', AddArticleComponent);
+
+class AddHeaderComponent extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = '<div class="home"><a class="home-anchor" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a></div>'+
+                            '<div class="logo-div"><p class="logo">Zeena Yalda</p></div>'+
+                            '<div class="menu-section"><span class="fa-stack fa-lg">'+
+                            '<i class="fa fa-square-o fa-stack-2x" aria-hidden=""></i>'+
+                            '<i class="fa fa-bars fa-stack-1x" aria-hidden="tre"></i></i>'+
+                            '</span></div>';
+    }
+}
+customElements.define('my-header', AddHeaderComponent);
+
+function toggleMenu() {
+    const toggleMenu = document.getElementById("menuBar");
+    toggleMenu.classList.toggle("active");
+}
+
 $(document).ready(function(){
     $pageHead = "head.html";
     $pageFooter = "footer.html";
@@ -36,7 +54,7 @@ $(document).ready(function(){
     $socialMedia = "socialMedia.html";
 
     $("head").load($pageHead);
-    $("menu").load($navbar);
+    $(".menu-section").load($navbar);
     $("footer").load($pageFooter);
     $("socialmedia").load($socialMedia);
 });

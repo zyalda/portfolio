@@ -1,10 +1,128 @@
  @import url("commonCss.css");
 .container {
   display: grid;
-  grid-template-rows: 1fr 2fr auto auto auto;
-  background-color: #eae2db;
+  grid-template-rows: auto 3fr auto;
+  background-color: #025202;
   padding: 1px;
   min-height: 100vh;
+}
+.header{
+  top: 0;
+  position: sticky;
+  margin: 0 0.1rem;
+  padding: 0.1rem 0;
+  background: #025202;
+  display: grid;
+  grid-template-areas: "home menu-section logo-div";
+  grid-template-columns: repeat(3, 1fr);
+  height: fit-content;
+  border-radius: 0.5rem;
+
+.logo, .menu-section li  a, .home-anchor{
+  fill:#ffd700;
+  font-family:Vijaya;
+  color:#ffd700;
+  border-color:Black;
+  font-style:italic;
+  text-shadow: 1px 1px 3px black;
+}
+.menu-section li{
+    display: inline-block;
+    margin: 0.5% 1%;
+}
+.menu-section a{
+  text-decoration: none;
+  font-size: 18px;
+}
+  .logo-div {  
+  grid-area: logo-div;
+  text-align: right;
+  font-Size:18px;
+  margin: 0px 2px 0px 0px;
+  padding: 0px;
+}
+.home, .menu-section{
+  display: grid;
+  align-content: center;
+}
+.home{
+  grid-area: home;
+  padding: 0 0 0 1rem;
+  .home-anchor{
+  text-decoration: none;
+  font-size: 24px;
+}
+}
+.menu-section{
+  grid-area: menu-section;
+  text-align: right;
+  padding: 0 1rem 0 0;
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+  .fa{
+      color: #ffd700;
+    }
+}
+ .mobil-menu-section{
+      display: none;
+    }
+ .socialmedia{
+  text-align: center;
+  }
+  .socialmedia a{
+    color: black;
+  }
+  .socialmedia a{
+    margin: 0px 5px;
+  }
+
+  /* Main CSS */
+.main{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.main-col-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.main-col-0 .title{
+    font-family: math;
+    font-size: 24px;
+    text-align: center;
+}
+.main-col-0 p{
+  font-family: ui-monospace;
+}
+.main-col-0 img {
+  max-width: 100%;
+  height: 100%;
+}
+ button, .btn {
+  background-color:Black;
+  border-color: #ffd700;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.cv {
+  /* float: right; */
 }
 /* form {
   border-radius: 5px;
@@ -45,96 +163,15 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: gray;
 } */
-/*** header, main and footer ***/
-a {
-  color: black;
-}
-
-/* .menu {
-   text-align: center;
-}
-.menu {
-  list-style-type: none;
-  margin: 0.2rem;
-  padding: 0rem;
-  background-color:Black;
-  border:solid 2px #ffd700;
-}
-.menu ul {
-  background-color:Black;
-}
-.menu li {
-    display: inline-block;
-    background-color:Black;
-    margin: 0.5% 1%;
-}
-.menu li a {
-  text-decoration: none;
-  font-size:1.8em;
-  font-family:Vijaya;
-  background-color:Black;
-  color: #ffd700;
-}
-.main{
-  display: grid;
-    grid-template-areas:
-    "main-col-0 main-col-1";
-  grid-template-columns: 3fr 1fr;
-  height: 100%;
-}
-.main-col-0 {
-   grid-area: main-col-0;
-    padding: 1rem;
-    background-color: gray;
-    border-radius: 1rem;
-    margin: 0.5rem;
-}
-my-article {
-    background-color: gray;
-} */
-/* .main-col-0 img {
-  max-width: 200px;
-  height: auto;
-  float: right;
-  shape-outside: url("portrait.jpg");
-} */
-/* .main-col-1 {
-    grid-area: main-col-1;
-    margin: 0.5rem;
-    border: solid 2px gray;
-    border-radius: 1rem;
-    text-align: center;
-} */
 /* .aboutme-main, .knowledge-main{
   margin: 0.5rem;
-} */
-/* button, .btn {
-  background-color:Black;
-  border-color: #ffd700;
-  color: white;
-  padding: 1rem 2rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 1rem 0.5rem;
-  cursor: pointer;
-  border-radius: 1rem;
-} */
-/* .cv {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
 } */
 /* .github i {
   color: rgb(101, 101, 101);
   font-size: 48px;
 } */
- .socialmedia{
-  text-align: center;
-  }
-  .socialmedia a{
-    color: black;
-  }
+
+/*** footer ***/
 .footer{
   margin: 0.1rem;
 }
@@ -144,5 +181,4 @@ my-article {
     border-color: #b4acac;
     border-top-width: 1px;
     text-align: center;
-    box-shadow: 10px 10px 5px #888888;
 }

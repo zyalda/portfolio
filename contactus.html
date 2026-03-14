@@ -1,0 +1,32 @@
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <head>
+    <title>Knowledge</title>
+ </head>
+ <body>
+ <container class="container">
+  <header class="header"></header>
+  <header class="header-mobil"></header>
+    <menu class="menu"></menu>
+  <main class="contactus-main">
+   
+    <form action="/page.php">
+       <p id="title-new"></p>
+        <label for="fname"><span class="star">&#8277;</span> First name:</label>
+        <input type="text" id="fname" name="fname" required pattern="[a-z A-Z]+" 
+        placeholder="Your first name.." onmouseover="customizedTitle(this.id, 'Must contain alphabet characters only.', '15rem')" 
+        onmouseleave="hideTitle()" onclick="hideTitle()">
+        <label for="lname"><span class="star">&#8277;</span> Last name:</label>
+        <input type="text" id="lname" name="lname" required pattern="[a-z A-Z]+" placeholder="Your last name.."
+          onmouseover="customizedTitle(this.id, 'Must contain alphbet characters only as last name.', '20rem')"
+           onmouseleave="hideTitle()" onclick="hideTitle()">
+        <label for="email"><span class="star">&#8277;</span> Enter your email:</label>
+        <input type="email" id="email" name="email" required placeholder="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        onmouseover="customizedTitle(this.id, 'Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters', '24rem')"
+        onmouseleave="hideTitle()" onclick="hideTitle()">
+        <input class="btn" type="submit" value="Submit">
+    </form>
+</main>
+<footer class="footer"></footer>
+</container>
+<script src="./Js/ComponentsJS.js"></script>
+ 
