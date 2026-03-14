@@ -1,7 +1,7 @@
  @import url("commonCss.css");
 .container {
   display: grid;
-  grid-template-rows: auto 3fr auto;
+  grid-template-rows: auto 3fr auto auto;
   background-color: #025202;
   padding: 1px;
   min-height: 100vh;
@@ -15,9 +15,14 @@
   display: grid;
   grid-template-areas: "home menu-section logo-div";
   grid-template-columns: repeat(3, 1fr);
-  height: fit-content;
   border-radius: 0.5rem;
 
+  .logo-div {  
+  grid-area: logo-div;
+  text-align: right;
+  font-Size:18px;
+  padding: 1rem;
+}
 .logo, .menu-section li  a, .home-anchor{
   fill:#ffd700;
   font-family:Vijaya;
@@ -26,6 +31,9 @@
   font-style:italic;
   text-shadow: 1px 1px 3px black;
 }
+.logo{
+  margin: 0px 2px 0px 0px;
+}
 .menu-section li{
     display: inline-block;
     margin: 0.5% 1%;
@@ -33,13 +41,6 @@
 .menu-section a{
   text-decoration: none;
   font-size: 18px;
-}
-  .logo-div {  
-  grid-area: logo-div;
-  text-align: right;
-  font-Size:18px;
-  margin: 0px 2px 0px 0px;
-  padding: 0px;
 }
 .home, .menu-section{
   display: grid;
@@ -106,7 +107,6 @@
 }
 .main-col-0 img {
   max-width: 100%;
-  height: 100%;
 }
  button, .btn {
   background-color:Black;
