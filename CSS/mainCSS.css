@@ -26,7 +26,7 @@
 .logo, .menu-section li  a, .home-anchor{
   fill:#ffd700;
   font-family:Vijaya;
-  color:#ffd700;
+  /* color:#ffd700; */
   border-color:Black;
   font-style:italic;
   text-shadow: 1px 1px 3px black;
@@ -64,9 +64,9 @@
     padding: 0;
   }
 }
-  .fa{
+  /* .fa{
       color: #ffd700;
-    }
+    } */
 }
  .mobil-menu-section{
       display: none;
@@ -102,8 +102,9 @@
     font-size: 24px;
     text-align: center;
 }
-.main-col-0 p{
+.main-col-0 p {
   font-family: ui-monospace;
+  font-size: 18px;
 }
 .main-col-0 img {
   max-width: 100%;
@@ -121,8 +122,8 @@
   cursor: pointer;
   border-radius: 1rem;
 }
-.cv {
-  /* float: right; */
+#references{
+  text-align: center;
 }
 /* form {
   border-radius: 5px;

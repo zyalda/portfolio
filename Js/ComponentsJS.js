@@ -30,6 +30,13 @@ class AddArticleComponent extends HTMLElement {
 }
 customElements.define('my-article', AddArticleComponent);
 
+class AddReferencesComponent extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML ='<p>References kan lämnas på begäran.</p>';
+    }
+}
+customElements.define('section-references', AddReferencesComponent);
+
 class AddHeaderComponent extends HTMLElement{
     connectedCallback(){
         this.innerHTML = '<div class="home"><a class="home-anchor" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a></div>'+
