@@ -4,29 +4,32 @@
  </head>
  <body>
  <container class="container">
-  <header class="header"></header>
-  <header class="header-mobil"></header>
-    <menu class="menu"></menu>
-  <main class="contactus-main">
-   
+  <my-header class="header">
+  </my-header>
+  <main class="main" onclick="hideTitle()">
+    <section onclick="hideTitle()"></section>
+    <first-section class="main-col-0" onclick="hideTitle()">
     <form action="/page.php">
+      <!-- Must contain at least one number and one uppercase and lowercase letter -->
        <p id="title-new"></p>
-        <label for="fname"><span class="star">&#8277;</span> First name:</label>
+        <label for="fname"><span class="star">&#8277;</span> Förrnamn:</label>
         <input type="text" id="fname" name="fname" required pattern="[a-z A-Z]+" 
-        placeholder="Your first name.." onmouseover="customizedTitle(this.id, 'Must contain alphabet characters only.', '15rem')" 
-        onmouseleave="hideTitle()" onclick="hideTitle()">
-        <label for="lname"><span class="star">&#8277;</span> Last name:</label>
-        <input type="text" id="lname" name="lname" required pattern="[a-z A-Z]+" placeholder="Your last name.."
-          onmouseover="customizedTitle(this.id, 'Must contain alphbet characters only as last name.', '20rem')"
-           onmouseleave="hideTitle()" onclick="hideTitle()">
-        <label for="email"><span class="star">&#8277;</span> Enter your email:</label>
-        <input type="email" id="email" name="email" required placeholder="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-        onmouseover="customizedTitle(this.id, 'Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters', '24rem')"
-        onmouseleave="hideTitle()" onclick="hideTitle()">
-        <input class="btn" type="submit" value="Submit">
+        placeholder="Bara bokstäver inga andra tecken" onmouseover="customizedTitle(this.id, 'Förrnamn ska vara bara bokstäver, inga andra tecken.')"
+        onclick ="customizedTitle(this.id, 'Förrnamn ska vara bara bokstäver inga andra tecken.')">
+        <label for="lname"><span class="star">&#8277;</span> Efternamn:</label>
+        <input type="text" id="lname" name="lname" required pattern="[a-z A-Z]+" placeholder="Bara bokstäver inga andra tecken"
+          onmouseover="customizedTitle(this.id, 'Efternamn ska vara bara bokstäver, inga andra tecken.')">
+        <label for="email"><span class="star">&#8277;</span> Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Minst ett nummer, en stor bokstav och minst 8 tecken lång." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        onmouseover="customizedTitle(this.id, 'Email ska innehålla minst en tal, en stor bokstav och minst 8 eller mer tecken.')">
+        <input class="btn" type="submit" value="Submit" onclick="hideTitle()">
     </form>
+    </first-section>
+    <section></section>
 </main>
-<footer class="footer"></footer>
+  <socialMedia class="socialmedia"></socialMedia>
+  <footer class="footer"></footer>
 </container>
 <script src="./Js/ComponentsJS.js"></script>
+</body>
  

@@ -1,14 +1,3 @@
-// function customizedTitle(id, title, top) {
-//   const element = document.getElementById(id);
-//   element.style.position = "relative";
-//   document.getElementById("title-new").style.display = "block";
-//   document.getElementById("title-new").style.top = top;
-//   document.getElementById("title-new").innerHTML = title;
-// }
-// function hideTitle(){
-//      document.getElementById("title-new").style.display = "none";
-//      document.getElementById("title-new").style.top = 0;
-// }
 class AddHeaderComponent extends HTMLElement{
     connectedCallback(){
         this.innerHTML = '<div class="home"><a class="home-anchor" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a></div>'+
@@ -50,6 +39,18 @@ class AddknowledgeComponent extends HTMLElement {
     }
 }
 customElements.define('my-knowledge', AddknowledgeComponent);
+
+function customizedTitle(id, title) {
+  const element = document.getElementById(id);
+  //element.style.position = "relative";
+  document.getElementById("title-new").style.display = "block";
+  //document.getElementById("title-new").style.top = top;
+  document.getElementById("title-new").innerHTML = title;
+}
+function hideTitle(){
+     document.getElementById("title-new").style.display = "none";
+     //document.getElementById("title-new").style.top = 0;
+}
 
 function toggleMenu() {
     const toggleMenu = document.getElementById("menuBar");
