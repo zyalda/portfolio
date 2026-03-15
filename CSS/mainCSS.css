@@ -182,13 +182,19 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: gray;
 }
-/* .aboutme-main, .knowledge-main{
-  margin: 0.5rem;
-} */
-/* .github i {
-  color: rgb(101, 101, 101);
-  font-size: 48px;
-} */
+.project-0 a{
+    fill: #ffd700;
+    font-family: Vijaya;
+    color: #ffd700;
+    border-color: Black;
+    font-style: italic;
+    text-shadow: 1px 1px 3px #025202;
+}
+.project-img-div img{
+  width: 30%;
+  display: inline-block;
+  margin: 0 1rem;
+}
 
 /*** footer ***/
 .footer{

@@ -1,3 +1,4 @@
+//My header section.
 class AddHeaderComponent extends HTMLElement{
     connectedCallback(){
         this.innerHTML = '<div class="home"><a class="home-anchor" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a></div>'+
@@ -10,10 +11,11 @@ class AddHeaderComponent extends HTMLElement{
 }
 customElements.define('my-header', AddHeaderComponent);
 
+//My Introduction section.
 class AddArticleComponent extends HTMLElement {
     connectedCallback() {
         this.innerHTML = '<p class="title"> Hej, Jag är Zeena.</p>'+
-        '<p>En fullstack utvecklare. Utvecklar webb och mobilapplikationer. Jag skapar också hemsidor bland annat för mina produkter.'+
+        '<p>Fullstack utvecklare, utvecklar webb och mobilapplikationer. Jag skapar också hemsidor bland annat för mina produkter.'+
         ' Länk till mina github repos finns nedan.</p>'+
          '<div class="cv"><a href="CurriculumVitae.odt" download>'+
          '<button type="button" class="btn">Load CV</button></a></div>';
@@ -21,6 +23,7 @@ class AddArticleComponent extends HTMLElement {
 }
 customElements.define('my-article', AddArticleComponent);
 
+//References section.
 class AddReferencesComponent extends HTMLElement {
     connectedCallback() {
         this.innerHTML ='<p>Referenses kan lämnas på begäran.</p>';
@@ -28,6 +31,18 @@ class AddReferencesComponent extends HTMLElement {
 }
 customElements.define('section-references', AddReferencesComponent);
 
+//My projects section.
+class AddPortfolioComponent extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = '<div class="project-0"><p>En av mina nuvarande project. En hemsida för mina produkter som jag designar och utför själv. Sidan är under pågående utveckling.'+
+                         ' Ett projekt för att marknadföra mina produkter och praktisera mina kunskaper i min unvarande utbildning.</p><p><a href="https://zyalda.github.io/QoolAccessories/">QoolAccessories</a></p></div>'+
+                         '<div class="project-img-div"><img src="./images/FRKW2469.JPG" alt="protrait">'+
+                         '<img src="./images/FRKW6601.JPG" alt="protrait"></div>';
+    }
+}
+customElements.define('my-portfolio', AddPortfolioComponent);
+
+//My knowledge section.
 class AddknowledgeComponent extends HTMLElement {
     connectedCallback() {
         this.innerHTML ='<p>Tekniskt kompetens inom bland annat webb och systemutveckling.</p>'+
