@@ -1,12 +1,3 @@
-// class AddknowledgeComponent extends HTMLElement {
-//     connectedCallback() {
-//         this.innerHTML ='<p>Tekniskt kompetent inom bland annat systemutveckling (HTML5, HTML, CSS, WordPress , PHP, XML, WPF, .NET och databaser (MySQL).'+
-//                         'Gillar att utmana mig själv och uppdatera mina kunskaper inom de senaste utvecklingsområdena. Är dedikerad och fokuserad med en enorm styrka som person och har struktur på jobbet.'+
-//                         'Jag är utbildad ingenjör (2 år) från Irak med el & elektronik-inriktning och har 3 års arbetslivserfarenhet inom utveckling och databas under senaste åren.</p>';
-//     }
-// }
-// customElements.define('my-knowledge', AddknowledgeComponent);
-
 // function customizedTitle(id, title, top) {
 //   const element = document.getElementById(id);
 //   element.style.position = "relative";
@@ -18,6 +9,17 @@
 //      document.getElementById("title-new").style.display = "none";
 //      document.getElementById("title-new").style.top = 0;
 // }
+class AddHeaderComponent extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = '<div class="home"><a class="home-anchor" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a></div>'+
+                            '<div class="logo-div"><p class="logo">Zeena Yalda</p></div>'+
+                            '<div class="menu-section"><span class="fa-stack fa-lg">'+
+                            '<i class="fa fa-square-o fa-stack-2x" aria-hidden=""></i>'+
+                            '<i class="fa fa-bars fa-stack-1x" aria-hidden="tre"></i></i>'+
+                            '</span></div>';
+    }
+}
+customElements.define('my-header', AddHeaderComponent);
 
 class AddArticleComponent extends HTMLElement {
     connectedCallback() {
@@ -37,17 +39,17 @@ class AddReferencesComponent extends HTMLElement {
 }
 customElements.define('section-references', AddReferencesComponent);
 
-class AddHeaderComponent extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML = '<div class="home"><a class="home-anchor" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a></div>'+
-                            '<div class="logo-div"><p class="logo">Zeena Yalda</p></div>'+
-                            '<div class="menu-section"><span class="fa-stack fa-lg">'+
-                            '<i class="fa fa-square-o fa-stack-2x" aria-hidden=""></i>'+
-                            '<i class="fa fa-bars fa-stack-1x" aria-hidden="tre"></i></i>'+
-                            '</span></div>';
+class AddknowledgeComponent extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML ='<p>Tekniskt kompetens inom bland annat webb och systemutveckling.</p>'+
+        '<div class="js-div"><img src="./images/Js-icon.jpg" alt="protrait"><p>Javasript</p></div>'+
+        '<div class="html-div"><p>HTML5</p><img src="./images/html-icon.jpg" alt="portrait"></div>'+
+        '<div class="css-div"><img src="./images/css-icon.jpg" alt="portrait"><p>CSS</p></div>'+
+        '<div class="cs-div"><p>C#</p><img src="./images/CS-icon.jpg" alt="portrait"></div>'+
+        '<p>WordPress, PHP, .NET och databaser (MySQL).';
     }
 }
-customElements.define('my-header', AddHeaderComponent);
+customElements.define('my-knowledge', AddknowledgeComponent);
 
 function toggleMenu() {
     const toggleMenu = document.getElementById("menuBar");

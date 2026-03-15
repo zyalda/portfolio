@@ -23,10 +23,10 @@
   font-Size:18px;
   padding: 1rem;
 }
-.logo, .menu-section li  a, .home-anchor{
+.logo, .menu-section li  a
+{
   fill:#ffd700;
   font-family:Vijaya;
-  /* color:#ffd700; */
   border-color:Black;
   font-style:italic;
   text-shadow: 1px 1px 3px black;
@@ -51,6 +51,8 @@
   padding: 0 0 0 1rem;
   .home-anchor{
   text-decoration: none;
+  font-family:Vijaya;
+  font-style:italic;
   font-size: 24px;
 }
 }
@@ -64,9 +66,6 @@
     padding: 0;
   }
 }
-  /* .fa{
-      color: #ffd700;
-    } */
 }
  .mobil-menu-section{
       display: none;
@@ -108,6 +107,26 @@
 }
 .main-col-0 img {
   max-width: 100%;
+}
+.my-knowledge{
+  border: solid 1px #025202;
+}
+.my-knowledge div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-knowledge p{
+  text-align: center;
+}
+.js-div p , .html-div p, .css-div p, .cs-div p{
+ margin: 2rem 2rem;
+}
+.js-div img, .cs-div img, .css-div img{
+  width: 12%;
+}
+.html-div img{
+  width: 20%;
 }
  button, .btn {
   background-color:Black;
