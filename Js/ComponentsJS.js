@@ -42,14 +42,11 @@ customElements.define('my-knowledge', AddknowledgeComponent);
 
 function customizedTitle(id, title) {
   const element = document.getElementById(id);
-  //element.style.position = "relative";
   document.getElementById("title-new").style.display = "block";
-  //document.getElementById("title-new").style.top = top;
   document.getElementById("title-new").innerHTML = title;
 }
 function hideTitle(){
      document.getElementById("title-new").style.display = "none";
-     //document.getElementById("title-new").style.top = 0;
 }
 
 function toggleMenu() {
