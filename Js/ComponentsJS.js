@@ -32,7 +32,7 @@ customElements.define('my-article', AddArticleComponent);
 
 class AddReferencesComponent extends HTMLElement {
     connectedCallback() {
-        this.innerHTML ='<p>References kan lämnas på begäran.</p>';
+        this.innerHTML ='<p>Referenses kan lämnas på begäran.</p>';
     }
 }
 customElements.define('section-references', AddReferencesComponent);
