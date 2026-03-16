@@ -1,7 +1,8 @@
+
 # My portfolio
 ## An introduction to myself, my knowledge and skills as fullstack developer.
 
-#### 1. Home page with an introduction.  
+#### 1. Home page with an introduction and CV to load.  
 #### 2. My projects page with my projects including link to project.  
 #### 3. About me page an introduction of myself and my experiences in the branch. 
 4. My knowledge page with following skills:    
