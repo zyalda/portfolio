@@ -9,8 +9,7 @@
   <main class="main" onclick="hideTitle()">
     <section onclick="hideTitle()"></section>
     <first-section class="main-col-0" onclick="hideTitle()">
-    <form action="/page.php">
-      <!-- Must contain at least one number and one uppercase and lowercase letter -->
+    <form action="https://formsubmit.co/9e2c3851e531f7fcccf22c239cbe7dfe" method="POST">
        <p id="title-new"></p>
         <label for="fname"><span class="star">&#8277;</span> Förrnamn:</label>
         <input type="text" id="fname" name="fname" required pattern="[a-z A-Z]+" 
@@ -20,8 +19,15 @@
         <input type="text" id="lname" name="lname" required pattern="[a-z A-Z]+" placeholder="Bara bokstäver inga andra tecken"
           onmouseover="customizedTitle(this.id, 'Efternamn ska vara bara bokstäver, inga andra tecken.')">
         <label for="email"><span class="star">&#8277;</span> Email:</label>
-        <input type="email" id="email" name="email" required placeholder="Minst ett nummer, en stor bokstav och minst 8 tecken lång." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-        onmouseover="customizedTitle(this.id, 'Email ska innehålla minst en tal, en stor bokstav och minst 8 eller mer tecken.')">
+        <input type="email" id="email" name="email" required placeholder="Minst 8 tecken lång." pattern="(?=.*[a-z]).{8,}"
+        onmouseover="customizedTitle(this.id, 'Email ska innehålla minst 8 tecken.')">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Your message ..."></textarea>
+        <!-- FormSubmit-inställningar -->
+        <!-- Localhost med Live Server -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
         <input class="btn" type="submit" value="Submit" onclick="hideTitle()">
     </form>
     </first-section>

@@ -35,7 +35,7 @@ customElements.define('section-references', AddReferencesComponent);
 class AddPortfolioComponent extends HTMLElement{
     connectedCallback(){
         this.innerHTML = '<div class="project-0"><p>En av mina nuvarande project. En hemsida för mina produkter som jag designar och utför själv. Sidan är under pågående utveckling.'+
-                         ' Ett projekt för att marknadföra mina produkter och praktisera mina kunskaper i min unvarande utbildning.</p><p><a href="https://zyalda.github.io/QoolAccessories/">QoolAccessories</a></p></div>'+
+                         ' Ett projekt för att marknadföra mina produkter och praktisera mina kunskaper i min unvarande utbildning.</p><p><a href="https://zyalda.github.io/QoolAccessories/" target="_blank">QoolAccessories</a></p></div>'+
                          '<div class="project-img-div"><img src="./images/FRKW2469.JPG" alt="protrait">'+
                          '<img src="./images/FRKW6601.JPG" alt="protrait"></div>';
     }
@@ -46,7 +46,7 @@ customElements.define('my-portfolio', AddPortfolioComponent);
 class AddknowledgeComponent extends HTMLElement {
     connectedCallback() {
         this.innerHTML ='<p>Tekniskt kompetens inom bland annat webb och systemutveckling.</p>'+
-        '<div class="js-div"><img src="./images/Js-icon.jpg" alt="protrait"><p>Javasript</p></div>'+
+        '<div class="js-div"><img src="./images/Js-icon.jpg" alt="protrait"><p>JAVASCRIPT</p></div>'+
         '<div class="html-div"><p>HTML5</p><img src="./images/html-icon.jpg" alt="portrait"></div>'+
         '<div class="css-div"><img src="./images/css-icon.jpg" alt="portrait"><p>CSS</p></div>'+
         '<div class="cs-div"><p>C#</p><img src="./images/CS-icon.jpg" alt="portrait"></div>'+
