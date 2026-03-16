@@ -4,7 +4,7 @@
 #### 1. Home page with an introduction.  
 #### 2. My projects page with my projects including link to project.  
 #### 3. About me page an introduction of myself and my experiences in the branch. 
-#### 4. My knowledge:  
+4. My knowledge page with following skills:    
 
     WordPress, PHP, .NET och databaser (MySQL).  
     
