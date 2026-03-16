@@ -1,1 +1,1 @@
-![The Google Logo](../portfolio/images/js-icon.jpg)
+![jsimage](./images/Js-icon.jpg "Optional title")
