@@ -50,11 +50,13 @@
   grid-area: home;
   padding: 0 0 0 1rem;
   .home-anchor{
-  text-decoration: none;
-  font-family:Vijaya;
-  font-style:italic;
-  font-size: 24px;
-}
+    width: fit-content;
+    text-decoration: none;
+    font-family:Vijaya;
+    font-style:italic;
+    font-size: 24px;
+    outline:none;
+  }
 }
 .menu-section{
   grid-area: menu-section;
@@ -85,8 +87,12 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   height: 100%;
+}
+.who-I-am{
+  float: right;
+  margin: 30% 0 0 0;
 }
 .main-col-0 {
     display: flex;

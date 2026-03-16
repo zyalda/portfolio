@@ -16,7 +16,7 @@ class AddArticleComponent extends HTMLElement {
     connectedCallback() {
         this.innerHTML = '<p class="title"> Hej, Jag är Zeena.</p>'+
         '<p>Fullstack utvecklare, utvecklar webb och mobilapplikationer. Jag skapar också hemsidor bland annat för mina produkter.'+
-        ' Länk till mina github repos finns nedan.</p>'+
+        ' Länk till mina github repos nedan i footer.</p>'+
          '<div class="cv"><a href="CurriculumVitae.odt" download>'+
          '<button type="button" class="btn">Load CV</button></a></div>';
     }
