@@ -7,7 +7,7 @@
 #### 4. My knowledge page with following skills:    
 
 
-    WordPress, PHP, .NET och databaser (MySQL).  
+    - WordPress, PHP, .NET och databaser (MySQL).  
     
     <img src="./images/css-icon.jpg" alt="protrait" width="50" height="50">  
     <img src="./images/html-icon.jpg" alt="protrait" width="50" height="50">  
