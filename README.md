@@ -1,6 +1,6 @@
 
 # My portfolio
-## An introduction to myself, my knowledge and skills as fullstack developer.
+## A presentation of me, my knowledge and skills as fullstack developer.
 
 #### 1. Home page with an introduction and CV to load.  
 #### 2. My projects page with my projects including link to project.  
