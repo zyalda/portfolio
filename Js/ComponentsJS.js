@@ -1,7 +1,7 @@
 //My header section.
 class AddHeaderComponent extends HTMLElement{
     connectedCallback(){
-        this.innerHTML = '<div class="home"><a class="home-anchor" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a></div>'+
+        this.innerHTML = '<div class="home"><a class="home-anchor" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Start</a></div>'+
                             '<div class="logo-div"><p class="logo">Zeena Yalda</p></div>'+
                             '<div class="menu-section"><span class="fa-stack fa-lg">'+
                             '<i class="fa fa-square-o fa-stack-2x" aria-hidden=""></i>'+
@@ -18,7 +18,7 @@ class AddArticleComponent extends HTMLElement {
         '<p>Fullstack utvecklare, utvecklar webb och mobilapplikationer. Jag skapar också hemsidor bland annat för mina produkter.'+
         ' Länk till mina github repos nedan i footer.</p>'+
          '<div class="cv"><a href="CurriculumVitae.odt" download>'+
-         '<button type="button" class="btn">Load CV</button></a></div>';
+         '<button type="button" class="btn">Ladda CV</button></a></div>';
     }
 }
 customElements.define('my-article', AddArticleComponent);
