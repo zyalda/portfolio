@@ -24,7 +24,7 @@
 3. CSS.
 
 ## Availability
- The project function on all browsers and devices.
+ The project available on all browsers and devices.
 
 ## Problems
 The code is tested only on emulators, not real devices.
