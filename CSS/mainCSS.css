@@ -96,6 +96,7 @@
 }
 .main-col-0 {
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -188,7 +189,7 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: gray;
 }
-.project-0 a{
+.project-0 a, #references a{
     fill: #ffd700;
     font-family: Vijaya;
     color: #ffd700;
@@ -199,7 +200,25 @@ input[type=submit]:hover {
 .project-img-div img{
   width: 30%;
   display: inline-block;
-  margin: 0 1rem;
+  margin: 1rem;
+}
+#references a{
+  font-size: 24px;
+}
+.my-references{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem;
+  margin: 0.5rem; */
+  border: solid 1px #025202;
+  padding: 2rem;
+}
+.my-references img{
+  float: right;
+}
+.my-references p{
+  margin-right: 1rem;
 }
 
 /*** footer ***/

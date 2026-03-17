@@ -23,14 +23,6 @@ class AddArticleComponent extends HTMLElement {
 }
 customElements.define('my-article', AddArticleComponent);
 
-//References section.
-class AddReferencesComponent extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML ='<p>Referenses kan lämnas på begäran.</p>';
-    }
-}
-customElements.define('section-references', AddReferencesComponent);
-
 //My projects section.
 class AddPortfolioComponent extends HTMLElement{
     connectedCallback(){
