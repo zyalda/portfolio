@@ -18,6 +18,17 @@
 #### 6. My references.  
 #### 7. footer including links to my social media.
 
+## The only tools used
+1. HTML.
+2. Js.
+3. CSS.
+
+## Availability
+ The project function on all browsers and devices.
+
+## Problems
+The code is tested only on emulators, not real devices.
+
     
 
 
