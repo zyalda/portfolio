@@ -37,12 +37,12 @@ customElements.define('my-portfolio', AddPortfolioComponent);
 //My knowledge section.
 class AddknowledgeComponent extends HTMLElement {
     connectedCallback() {
-        this.innerHTML ='<p>Tekniskt kompetens inom bland annat webb och systemutveckling.</p>'+
+        this.innerHTML ='<p class="my-knowledge-p">Tekniskt kompetens inom bland annat webb och systemutveckling.</p>'+
         '<div class="js-div"><img src="./images/Js-icon.jpg" alt="protrait"><p>JAVASCRIPT</p></div>'+
         '<div class="html-div"><p>HTML5</p><img src="./images/html-icon.jpg" alt="portrait"></div>'+
         '<div class="css-div"><img src="./images/css-icon.jpg" alt="portrait"><p>CSS</p></div>'+
         '<div class="cs-div"><p>C#</p><img src="./images/CS-icon.jpg" alt="portrait"></div>'+
-        '<p>WordPress, PHP, .NET och databaser (MySQL).';
+        '<p class="my-knowledge-p">WordPress, PHP, .NET och databaser (MySQL).';
     }
 }
 customElements.define('my-knowledge', AddknowledgeComponent);
@@ -60,7 +60,7 @@ function hideTitle(){
 class AddweatherComponent extends HTMLElement {
     connectedCallback() {
         this.innerHTML ='<input type="text" id="city" name="city" required pattern="[a-z A-Z]+"'+
-                        'onfocus="myOnfocus(this)" value="Stockholm"/><button id="getWeather-btn" onclick="GetTheWeather()">Väddret</button>'+
+                        'onfocus="myOnfocus(this)" value="Stockholm"/><button id="getWeather-btn" onclick="GetTheWeather()">Vädret</button>'+
                         '<div id="weatherInfo"></div>';
     }
 }

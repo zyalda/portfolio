@@ -112,9 +112,9 @@
   font-family: ui-monospace;
   font-size: 18px;
 }
-.main-col-0 img {
+/* .main-col-0 img {
   max-width: 100%;
-}
+} */
 /*My-weather section*/
 #weatherInfo{
   width: fit-content;
@@ -124,14 +124,14 @@
   display: inline-block;
 }
 #city{
-  width: fit-content;
+  width: 40%;
   padding: 0.5rem;
   margin-left: 0.5rem;
   border: solid 1px gray;
 }
 #getWeather-btn
 {
-  font-size: 10px;
+  font-size: 12px;
   padding: auto;
 }
 #weather-img{
@@ -167,7 +167,7 @@
 }
  button, .btn {
   background-color:Black;
-  border-color: #ffd700;
+  border-color: #ffd700; /*#19a247  --- yellow #cfb006*/
   color: white;
   padding: 0.5rem 1rem;
   text-align: center;
