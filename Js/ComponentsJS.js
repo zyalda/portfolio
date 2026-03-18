@@ -56,6 +56,16 @@ function hideTitle(){
      document.getElementById("title-new").style.display = "none";
 }
 
+// //My weather section.
+class AddweatherComponent extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML ='<input type="text" id="city" name="city" required pattern="[a-z A-Z]+"'+
+                        'onfocus="myOnfocus(this)" value="Stockholm"/><button id="getWeather-btn" onclick="GetTheWeather()">Väddret</button>'+
+                        '<div id="weatherInfo"></div>';
+    }
+}
+customElements.define('my-weather', AddweatherComponent);
+
 function toggleMenu() {
     const toggleMenu = document.getElementById("menuBar");
     toggleMenu.classList.toggle("active");
