@@ -183,9 +183,9 @@
         font-size: 24px;
       }
     }
-    /* .footer section{
+    .footer section{
       font-size: 24px;
-    } */
+    }
 }
 @media (min-width: 768px)and (max-width: 1024px){
   @import url("commonCss.css");
@@ -233,7 +233,6 @@
       margin: 0 1em 0 0;
     }
     .main-col-0{
-      margin: auto;
       .title{
         margin-bottom: 1em;
       }
@@ -259,9 +258,9 @@
         font-size: 24px;
       }
     }
-    /* .footer section{
+    .footer section{
       font-size: 24px;
-    } */
+    }
 }
 @media screen and (max-width: 768px){
 @import url("commonCss.css");
@@ -328,7 +327,6 @@
       margin: 0 1em 0 0;
     }
     .main-col-0{
-      margin: auto;
       .title{
         margin-bottom: 1em;
       }
@@ -341,7 +339,7 @@
         font-size: 24px;
       }
     }
-    /* .footer section{
+    .footer section{
       font-size: 24px;
-    } */
+    }
 }
