@@ -143,13 +143,13 @@
   padding: 0;
 }
 .my-portfolio{
-  border: solid 1px #025202;
-    padding: 1em;
-    margin: 1em;
+  margin: 1em;
 }
 /****************/
-.my-knowledge{
+.my-knowledge, .aboutme, .my-portfolio{
   border: solid 1px #025202;
+  box-shadow: 1px 1px 15px 3px #025202;
+  padding: 1em;
 }
 .my-knowledge div{
   display: flex;
