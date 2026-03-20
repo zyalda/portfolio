@@ -6,22 +6,46 @@
   padding: 1px;
   min-height: 100vh;
 }
+/* header section */
 .header{
   top: 0;
   position: sticky;
-  margin: 0 0.1rem;
-  padding: 0.1rem 0;
+  margin: 0 0.1em;
+  padding: 0.1em 0;
   background: #025202;
   display: grid;
   grid-template-areas: "home menu-section logo-div";
   grid-template-columns: repeat(3, 1fr);
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
 
-  .logo-div {  
+.home{
+  grid-area: home;
+  padding: 0;
+  margin: 0;
+  .home-anchor{
+    width: fit-content;
+    text-decoration: none;
+    font-family:Vijaya;
+    font-style:italic;
+    font-size: 24px;
+    outline:none;
+    padding: 0 0 0 0.5em;
+  }
+}
+.logo-div {  
   grid-area: logo-div;
   text-align: right;
   font-Size:18px;
-  padding: 1rem;
+  padding: 0.5em;
+}
+.menu-section{
+  grid-area: menu-section;
+  text-align: center;
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 .logo, .menu-section li  a
 {
@@ -29,10 +53,6 @@
   font-family:Vijaya;
   border-color:Black;
   font-style:italic;
-  text-shadow: 1px 1px 3px black;
-}
-.logo{
-  margin: 0px 2px 0px 0px;
 }
 .menu-section li{
     display: inline-block;
@@ -43,66 +63,35 @@
   font-size: 18px;
 }
 .home, .menu-section{
-  display: grid;
   align-content: center;
-}
-.home{
-  grid-area: home;
-  padding: 0 0 0 1rem;
-  .home-anchor{
-    width: fit-content;
-    text-decoration: none;
-    font-family:Vijaya;
-    font-style:italic;
-    font-size: 24px;
-    outline:none;
-  }
-}
-.menu-section{
-  grid-area: menu-section;
-  text-align: right;
-  padding: 0 1rem 0 0;
-  ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
 }
 }
  .mobil-menu-section{
       display: none;
     }
- .socialmedia{
-  text-align: center;
-  }
-  .socialmedia a{
-    color: black;
-  }
-  .socialmedia a{
-    margin: 0px 5px;
-  }
 
+  /* End of header section */
   /* Main CSS */
 .main{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   justify-content: center;
-  /* align-items: center; */
   height: 100%;
 }
-.who-I-am{
-  /* float: right;
-  margin: 10% 0 0 0; */
-}
 .main-col-0 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 5em 0;
+}
+.intro-div{
+  display: grid;
+    grid-template-areas:
+        "intro-index-page"
+        "portrait-div";
+    grid-template-columns: repeat(2, 2fr);
+}
+.intro-index-page, .portrait-div{
+  margin: auto;
 }
 .main-col-0 .title{
     font-family: math;
@@ -142,14 +131,15 @@
   margin: 0 0.5rem 0 0;
   padding: 0;
 }
-.my-portfolio{
-  margin: 1em;
-}
 /****************/
 .my-knowledge, .aboutme, .my-portfolio{
   border: solid 1px #025202;
   box-shadow: 1px 1px 15px 3px #025202;
   padding: 1em;
+  margin: 0.2em;
+}
+.my-portfolio{
+  margin: 1em;
 }
 .my-knowledge div{
   display: flex;
@@ -168,9 +158,9 @@
 .html-div img{
   width: 20%;
 }
- button, .btn {
+ button, .btn{
   background-color:Black;
-  border-color: #ffd700; /*#19a247  --- yellow #cfb006*/
+  border-color: #ffd700;
   color: white;
   padding: 0.5rem 1rem;
   text-align: center;
@@ -207,7 +197,6 @@ input[type=submit] {
 .star{
   color: red;
 }
-
  #title-new{
     display: none;
     margin: 1rem 0.5rem;
@@ -242,9 +231,8 @@ input[type=submit]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 1rem;
-  margin: 0.5rem; */
   border: solid 1px #025202;
+  box-shadow: 1px 1px 15px 3px #025202;
   padding: 2rem;
 }
 .my-references img{
@@ -253,7 +241,21 @@ input[type=submit]:hover {
 .my-references p{
   margin-right: 1rem;
 }
-
+.btn a{
+      text-decoration: none;
+    background-color: transparent;
+}
+/* Socialmedia section */
+ .socialmedia{
+  text-align: center;
+  }
+  .socialmedia a{
+    color: black;
+  }
+  .socialmedia a{
+    margin: 0px 5px;
+  }
+/* End of socialmedia section */
 /*** footer ***/
 .footer{
   margin: 0.1rem;
